@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lottie/lottie.dart';
 import 'package:state_management_task/view/screens/first_screen.dart';
 import 'package:state_management_task/view_model/cubits/task_cubit/task_cibit.dart';
 import 'package:state_management_task/view_model/cubits/task_cubit/task_state.dart';
@@ -64,12 +65,8 @@ class SecondScreen extends StatelessWidget {
                 visible: TaskCubit.get(context).visible,
                 child: Column(
                   children: [
-                    Icon(
-                      Icons.adb_outlined,
-                      color: Colors.white,
-                      size: 100,
-                    ),
-                    Text('No Names Add Yet',style: TextStyle(color: Colors.white),),
+                    Lottie.network('https://lottie.host/471f9e66-2fd6-4691-90f5-87f46572ffff/iF45S1V0cA.json',height: 200),
+                    Text('No Names Add ',style: TextStyle(color: Colors.white),),
                   ],
                 ),
               ),
